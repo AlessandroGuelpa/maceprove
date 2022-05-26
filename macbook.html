@@ -21,7 +21,12 @@
   <body>
     <div class="wrapper">
       <div class="tophone">
-        <span class="left" style="margin-right: 10px">15:35</span>
+        <span
+          id="time2"
+          class="left"
+          style="margin-right: 10px"
+          onload="clock2()"
+        ></span>
         <div class="notch"></div>
         <span
           ><i class="fa fa-wifi" aria-hidden="true" style="font-size: 15px"></i
@@ -58,7 +63,7 @@
           <span class="element right"
             ><i class="fa fa-search" aria-hidden="true"></i
           ></span>
-          <span class="element right">Tue 11:40 AM</span>
+          <span id="time" class="element right" onload="clock()"></span>
           <span class="element right"
             ><i
               class="fa fa-battery-half"
@@ -198,5 +203,57 @@
         transition: all 0.5s;
       }
     </style>
+    <script>
+      function clock() {
+        var date = new Date();
+        var h = date.getHours();
+        var m = date.getMinutes();
+        var s = date.getSeconds();
+        var session = "AM";
+
+        if (h == 0) {
+          h = 12;
+        }
+
+        if (h > 12) {
+          h = h - 12;
+          session = "PM";
+        }
+
+        h = h < 10 ? "0" + h : h;
+        m = m < 10 ? "0" + m : m;
+        s = s < 10 ? "0" + s : s;
+
+        var time = h + ":" + m + ":" + s + " " + session;
+        document.getElementById("time").innerText = time;
+        document.getElementById("time").textContent = time;
+
+        setTimeout(clock, 1000);
+      }
+      function clock2() {
+        var date = new Date();
+        var h = date.getHours();
+        var m = date.getMinutes();
+
+        if (h == 0) {
+          h = 12;
+        }
+
+        if (h > 12) {
+          h = h - 12;
+        }
+
+        h = h < 10 ? "0" + h : h;
+        m = m < 10 ? "0" + m : m;
+
+        var time = h + ":" + m;
+        document.getElementById("time2").innerText = time;
+        document.getElementById("time2").textContent = time;
+
+        setTimeout(clock, 1000);
+      }
+      clock();
+      clock2();
+    </script>
   </body>
 </html>
