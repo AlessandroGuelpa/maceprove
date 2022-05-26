@@ -42,11 +42,11 @@
       </div>
       <div class="top">
         <div class="spanel">
-          <span class="element left">
+          <span class="element left" style="padding: 4px 10px">
             <i
               id="mela"
               class="fa fa-apple"
-              style="color: white; font-size: 20px"
+              style="color: white; font-size: 18px"
             ></i>
           </span>
           <span class="element left">Finder</span>
@@ -88,121 +88,26 @@
           <img src="safari.png" />
           <img src="setting.png" />
         </div>
-      </div>
-      <div class="bottom">
-        <img src="foto.png" />
-        <img src="folder.png" />
-        <img src="safari.png" />
-        <img src="setting.png" />
-        <img src="foto.png" />
-        <img src="folder.png" />
-        <img src="safari.png" />
-        <img src="setting.png" />
-        <img src="foto.png" />
-        <img src="folder.png" />
-        <img src="safari.png" />
-        <img src="setting.png" />
-        <img src="foto.png" />
-        <img src="folder.png" />
+
+        <div class="bottom">
+          <img src="foto.png" />
+          <img src="folder.png" />
+          <img src="safari.png" />
+          <img src="setting.png" />
+          <img src="foto.png" />
+          <img src="folder.png" />
+          <img src="safari.png" />
+          <img src="setting.png" />
+          <img src="foto.png" />
+          <img src="folder.png" />
+          <img src="safari.png" />
+          <img src="setting.png" />
+          <img src="foto.png" />
+          <img src="folder.png" />
+        </div>
       </div>
     </div>
-    <style>
-      .bottom {
-        height: 8vh;
-        margin-top: 88vh;
-        background-color: rgba(69, 69, 69, 0.5);
-        text-align: center;
-      }
-      img:hover {
-        transform: scale(1.2);
-        transition: all 0.2s;
-      }
-      img {
-        margin-top: 5px;
-        width: 50px;
-      }
-      .bottomphone {
-        height: 8vh;
-        width: 80vw;
-        margin: 85vh auto;
-        background-color: rgba(69, 69, 69, 0.5);
-        text-align: center;
-        border-radius: 25px;
-      }
-    </style>
-    <style>
-      *,
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      .wrapper {
-        background-image: url("MacBook.png");
-        width: 100vw;
-        height: 100vh;
-        background-size: cover;
-      }
-      .right {
-        float: right;
-      }
-      .left {
-        float: left;
-      }
-      .tophone {
-        display: none;
-        padding: 10px 0 0 10px;
-        font-size: 20px;
-        color: white;
-        text-align: center;
-      }
-      .notch {
-        background-color: black;
-        float: left;
-        width: 65%;
-        margin-top: -10px;
-        border-radius: 0 0 10px 10px;
-        height: 30px;
-      }
-      .bottomphone {
-        display: none;
-      }
-      @media screen and (max-width: 400px) {
-        .wrapper {
-          background-image: url("apple-iphone-xs-wallpaper.webp");
-        }
-        .top {
-          display: none;
-        }
-        .tophone {
-          display: block;
-        }
-        .bottom {
-          display: none;
-        }
-        .bottomphone {
-          display: block;
-        }
-      }
-      .spanel {
-        line-height: 30px;
-        height: 30px;
-        background-color: rgba(69, 69, 69, 0.5);
-        color: white;
-      }
-      #mela:hover {
-        filter: invert(1);
-        transition: all 0.5s;
-      }
-      .element {
-        padding: 0 10px;
-      }
-      .element:hover {
-        background-color: aliceblue;
-        color: black;
-        transition: all 0.5s;
-      }
-    </style>
+
     <script>
       function clock() {
         var date = new Date();
@@ -234,15 +139,6 @@
         var date = new Date();
         var h = date.getHours();
         var m = date.getMinutes();
-
-        if (h == 0) {
-          h = 12;
-        }
-
-        if (h > 12) {
-          h = h - 12;
-        }
-
         h = h < 10 ? "0" + h : h;
         m = m < 10 ? "0" + m : m;
 
