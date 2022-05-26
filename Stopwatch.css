@@ -1,0 +1,46 @@
+html,body{
+  margin:0;
+  padding: 0;
+  text-align: center;
+}
+.Stopwatch {
+    height: 60vh;
+    width: 60vw;
+    margin: auto;
+    position: static;
+    text-align: center;
+    color: white;
+    background-color: gold;
+  }
+  .text {
+    font-size: 35px;
+  }
+  #time {
+    font-size: 30px;
+  }
+  .b {
+    width: 150px;
+    background-color: transparent;
+    height: 60px;
+    font-size: 20px;
+    color: white;
+    border: solid 1px white;
+  }
+  .b:hover {
+    background-color: white;
+    color: gold;
+    transition: all 1s;
+  }
+  .Watch {
+    margin-top: 50px;
+    height: 40vh;
+    width: auto;
+    background-color: black;
+    color: #17d4fe;
+    font-size: 70px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+  }
+  #clock {
+    padding-top: 10%;
+  }

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="macbook.css" />
+    <script src="macbook.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="tophone">
+        <span class="left" style="margin-right: 10px">15:35</span>
+        <div class="notch"></div>
+        <span
+          ><i class="fa fa-wifi" aria-hidden="true" style="font-size: 15px"></i
+        ></span>
+        <span
+          ><i
+            class="fa fa-battery-half"
+            aria-hidden="true"
+            style="font-size: 15px"
+          ></i
+        ></span>
+        <span><i class="fa fa-signal" aria-hidden="true"></i></span>
+      </div>
+      <div class="top">
+        <div class="spanel">
+          <span class="element left">
+            <i
+              id="mela"
+              class="fa fa-apple"
+              style="color: white; font-size: 20px"
+            ></i>
+          </span>
+          <span class="element left">Finder</span>
+          <span class="element left">File</span>
+          <span class="element left">Edit</span>
+          <span class="element left">View</span>
+          <span class="element left">Go</span>
+          <span class="element left">Window</span>
+          <span class="element left">Help</span>
+
+          <span class="element right"
+            ><i class="fa fa-cog" aria-hidden="true"></i
+          ></span>
+          <span class="element right"
+            ><i class="fa fa-search" aria-hidden="true"></i
+          ></span>
+          <span class="element right">Tue 11:40 AM</span>
+          <span class="element right"
+            ><i
+              class="fa fa-battery-half"
+              aria-hidden="true"
+              style="font-size: 15px"
+            ></i
+          ></span>
+          <span class="element right"
+            ><i
+              class="fa fa-wifi"
+              aria-hidden="true"
+              style="font-size: 15px"
+            ></i
+          ></span>
+          <span class="element right"></span>
+        </div>
+      </div>
+      <div class="sopra">
+        <div class="bottomphone">
+          <img src="foto.png" />
+          <img src="folder.png" />
+          <img src="safari.png" />
+          <img src="setting.png" />
+        </div>
+      </div>
+      <div class="bottom">
+        <img src="foto.png" />
+        <img src="folder.png" />
+        <img src="safari.png" />
+        <img src="setting.png" />
+        <img src="foto.png" />
+        <img src="folder.png" />
+        <img src="safari.png" />
+        <img src="setting.png" />
+        <img src="foto.png" />
+        <img src="folder.png" />
+        <img src="safari.png" />
+        <img src="setting.png" />
+        <img src="foto.png" />
+        <img src="folder.png" />
+      </div>
+    </div>
+    <style>
+      .bottom {
+        height: 8vh;
+        margin-top: 88vh;
+        background-color: rgba(69, 69, 69, 0.5);
+        text-align: center;
+      }
+      img:hover {
+        transform: scale(1.2);
+        transition: all 0.2s;
+      }
+      img {
+        margin-top: 5px;
+        width: 50px;
+      }
+      .bottomphone {
+        height: 8vh;
+        width: 80vw;
+        margin: 85vh auto;
+        background-color: rgba(69, 69, 69, 0.5);
+        text-align: center;
+        border-radius: 25px;
+      }
+    </style>
+    <style>
+      *,
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .wrapper {
+        background-image: url("MacBook.png");
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+      }
+      .right {
+        float: right;
+      }
+      .left {
+        float: left;
+      }
+      .tophone {
+        display: none;
+        padding: 10px 0 0 10px;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+      }
+      .notch {
+        background-color: black;
+        float: left;
+        width: 65%;
+        margin-top: -10px;
+        border-radius: 0 0 10px 10px;
+        height: 30px;
+      }
+      .bottomphone {
+        display: none;
+      }
+      @media screen and (max-width: 400px) {
+        .wrapper {
+          background-image: url("apple-iphone-xs-wallpaper.webp");
+        }
+        .top {
+          display: none;
+        }
+        .tophone {
+          display: block;
+        }
+        .bottom {
+          display: none;
+        }
+        .bottomphone {
+          display: block;
+        }
+      }
+      .spanel {
+        line-height: 30px;
+        height: 30px;
+        background-color: rgba(69, 69, 69, 0.5);
+        color: white;
+      }
+      #mela:hover {
+        filter: invert(1);
+        transition: all 0.5s;
+      }
+      .element {
+        padding: 0 10px;
+      }
+      .element:hover {
+        background-color: aliceblue;
+        color: black;
+        transition: all 0.5s;
+      }
+    </style>
+  </body>
+</html>
