@@ -51,6 +51,13 @@ body {
   .bottomphone {
     display: block;
   }
+  .tophone {
+    padding: 5px 0 5px;
+  }
+
+  .notch {
+    width: 60%;
+  }
 }
 .spanel {
   line-height: 30px;
@@ -58,7 +65,7 @@ body {
   background-color: rgba(69, 69, 69, 0.5);
   color: white;
 }
-#mela:hover {
+#mela:hover #mela_logo {
   filter: invert(1);
   transition: all 0.5s;
 }
@@ -99,4 +106,19 @@ img {
   background-color: rgba(69, 69, 69, 0.5);
   text-align: center;
   border-radius: 25px;
+}
+#menu_mela {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  left: 0;
+  top: 30px;
+  background-color: white;
+}
+#mela:hover #menu_mela {
+  display: block;
+  opacity: 0.8;
+  transition: opacity 0.8s;
 }
